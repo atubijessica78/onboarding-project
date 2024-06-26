@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onboarding Project</title>
+    <link rel="stylesheet" href="./signupOTP.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-logo">
+          <img src="./assets/Haleph 1.svg" alt="logo" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="left-column">
+        <img src="./assets/Group 98.svg" alt="" />
+      </div>
+
+      <div class="middle-column">
+        <a href="./createAccount.html">
+          <img src="../signin/assets/arrow-left-line 1.svg" alt="" />
+        </a>
+        <div class="heading">An OTP code <br />has been sent to You!</div>
+        <p class="text">Enter the code you received via email to continue.</p>
+        <form action="">
+          <div class="otp-code-container">
+            <div id="otp-input" class="otp-input">
+              <input step="1" min="0" max="9" autocomplete="no" pattern="\d*" />
+              <input step="1" min="0" max="9" autocomplete="no" pattern="\d*" />
+              <input step="1" min="0" max="9" autocomplete="no" pattern="\d*" />
+              <input step="1" min="0" max="9" autocomplete="no" pattern="\d*" />
+              <input step="1" min="0" max="9" autocomplete="no" pattern="\d*" />
+              <input step="1" min="0" max="9" autocomplete="no" pattern="\d*" />
+            </div>
+            <input type="hidden" name="otp" />
+          </div>
+          <a href="./businessSignup.html" class="signin-btn button-style">
+            Continue</a
+          >
+
+          <div class="resend">
+            <p>Didn’t Get the code?</p>
+            <a href="">Resend</a>
+          </div>
+        </form>
+      </div>
+      <div class="right-column">
+        <img src="./assets/Group 99.svg" alt="" />
+      </div>
+    </main>
+    <script src="./signupOTP.js"></script>
+  </body>
+</html>

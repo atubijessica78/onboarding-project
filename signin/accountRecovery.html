@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onboarding Project </title>
-    <link rel="stylesheet" href="./accountRecovery.css">
-</head>
-<body>
-   <header>
-    <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onboarding Project</title>
+    <link rel="stylesheet" href="./accountRecovery.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
         <div class="nav-logo">
-            <img src="./assets/Haleph 1.svg" alt="logo">
+          <img src="./assets/Haleph 1.svg" alt="logo" />
         </div>
-          
-    </nav>
-   </header>
-   <main>
-    <div class="left-column">
-        <img src="./assets/Group 1482.svg" alt="" srcset="">
-    </div>
+      </nav>
+    </header>
+    <main>
+      <div class="left-column">
+        <img src="./assets/Group 1482.svg" alt="" srcset="" />
+      </div>
 
-    <div class="middle-column">
-        <img src="./assets/arrow-left-line 1.svg" alt="">
-       <div class="heading">Let’s Help You <br>
-        Get into Your Account</div>
-       <p>Enter your email to reset your password.</p>
-       <form action="">
-        <input type="email" name="email" id="email" placeholder="Email">
-       
-        <button type="submit" class="login-btn button-style">Recover Password</button>
-        
-       </form>
-    </div>
-    <div class="right-column">
-        <img src="./assets/Group 1481.svg" alt="" srcset="">
-    </div>
-   </main>
-</body>
+      <div class="middle-column">
+        <img
+          src="./assets/arrow-left-line 1.svg"
+          alt=""
+          onclick="navigateToSign()"
+        />
+        <div class="heading">
+          <span>Let’s Help You </span>
+          Get into Your Account
+        </div>
+        <p>Enter your email to reset your password.</p>
+        <form action="">
+          <input type="email" name="email" id="email" placeholder="Email" />
+
+          <button
+            type="button"
+            onclick="changePassword()"
+            class="login-btn button-style"
+          >
+            Recover Password
+          </button>
+        </form>
+      </div>
+      <div class="right-column">
+        <img src="./assets/Group 1481.svg" alt="" srcset="" />
+      </div>
+    </main>
+    <script>
+      function changePassword() {
+        window.location.href = "changePassword.html";
+      }
+      function navigateToSign() {
+        window.location.href = "signin.html";
+      }
+    </script>
+  </body>
 </html>

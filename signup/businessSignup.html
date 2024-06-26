@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onboarding Project</title>
+    <link rel="stylesheet" href="./businessSignup.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-logo">
+          <img src="./assets/Haleph 1.svg" alt="logo" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="left-column">
+        <img src="./assets/Group 1483 1.svg" alt="" srcset="" />
+      </div>
+
+      <div class="middle-column">
+        <a href="./signupOTP.html">
+          <img
+            src="./assets/arrow-left-line 1.svg"
+            alt=""
+            srcset=""
+            width="30px"
+            height="30px"
+          />
+        </a>
+
+        <div class="heading">Tell Us about <span>Your Business</span></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <form action="">
+          <input
+            type="text"
+            name="business-name"
+            id="business-name"
+            placeholder="Business name"
+          />
+          <div class="dropdown">
+            <input
+              type="text"
+              name="industry"
+              id="industry"
+              placeholder="Industry"
+              readonly
+            />
+            <img
+              src="./assets/chevron-bottom.svg"
+              alt="chevron"
+              class="chevron"
+            />
+            <div class="dropdown-content" id="industry-options">
+              <div data-value="technology">Freelancer</div>
+              <div data-value="finance">Telecommunications</div>
+              <div data-value="accounting">Accounting</div>
+              <div data-value="advertising">Advertising/Media/Marketing</div>
+              <div data-value="industry">Industry</div>
+            </div>
+          </div>
+          <div class="half-input">
+            <div class="dropdown">
+              <input
+                type="text"
+                name="time-zone"
+                id="time-zone"
+                placeholder="Time Zone"
+                readonly
+              />
+              <img
+                src="./assets/chevron-bottom.svg"
+                alt="chevron"
+                class="chevron"
+              />
+
+              <div class="dropdown-content" id="timezone-options">
+                <div data-value="pst">PST</div>
+                <div data-value="est">EST</div>
+                <div data-value="gmt">GMT</div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <input
+                type="text"
+                name="currency"
+                id="currency"
+                placeholder="Currency"
+                readonly
+              />
+              <img
+                src="./assets/chevron-bottom.svg"
+                alt="chevron"
+                class="chevron"
+              />
+              <div class="dropdown-content" id="currency-options">
+                <div data-value="usd">USD</div>
+                <div data-value="eur">EUR</div>
+                <div data-value="gbp">GBP</div>
+              </div>
+            </div>
+          </div>
+          <input
+            type="text"
+            name="employees"
+            id="employees"
+            placeholder="Number of Employees"
+          />
+          <a href="./createPassword.html" class="login-btn button-style"
+            >Continue</a
+          >
+        </form>
+      </div>
+      <div class="right-column">
+        <img src="./assets/Group 1483 2.svg" alt="" srcset="" />
+      </div>
+    </main>
+
+    <script src="./businessSignup.js"></script>
+  </body>
+</html>
