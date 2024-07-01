@@ -504,3 +504,53 @@ nav {
 .expense-breakdown {
   background: rgba(230, 99, 70, 0.05);
 }
+.create-new-modal {
+  width: 631px;
+  height: 255px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  padding: 25px 36px 36px 36px;
+  border: 1px solid rgba(112, 112, 112, 0.1);
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(107, 107, 107, 0.08);
+}
+.create-new-heading {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 21px;
+}
+.create-new-heading h3 {
+  color: #222;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 23.4px */
+}
+.create-new-heading img {
+  width: 15.91px;
+  height: 15.91px;
+  flex-shrink: 0;
+}
+.create-new-modal ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px 84px;
+  max-width: 512px;
+  white-space: nowrap;
+}
+.create-new-modal ul li {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  color: #222;
+  opacity: 0.7;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 18.2px */
+}
+.item-9 {
+  grid-column: 3;
+  grid-row: 3 / span 5;
+}
