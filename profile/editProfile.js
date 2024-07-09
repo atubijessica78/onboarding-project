@@ -1,3 +1,19 @@
+const showSidebar = document.getElementById("menu");
+const sidebar = document.getElementById("sidebar-container");
+const icon = showSidebar.querySelector("i");
+showSidebar.addEventListener("click", () => {
+  sidebar.classList.toggle("show");
+
+  // Toggle between the hamburger and times icons
+  if (icon.classList.contains("fa-bars")) {
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-times");
+  } else {
+    icon.classList.remove("fa-times");
+    icon.classList.add("fa-bars");
+  }
+});
+
 const modal_container = document.getElementById("business-modal");
 const close = document.querySelectorAll(".close");
 const saveChanges = document.getElementById("save-changes");
@@ -15,12 +31,14 @@ let personalImageDataUrl = "";
 if (open && modal_container) {
   open.addEventListener("click", () => {
     modal_container.classList.add("show");
+    document.body.style.overflow = "hidden";
   });
 }
 
 close.forEach((button) => {
   button.addEventListener("click", () => {
     modal_container.classList.remove("show");
+    document.body.style.overflow = "scroll ";
     clearPersonalModal();
   });
 });
