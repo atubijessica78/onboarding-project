@@ -1,12 +1,14 @@
 {
+  "version": 2,
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "styles/*", "use": "@vercel/static" },
+    { "src": "scripts/*", "use": "@vercel/static" },
+    { "src": "assets/*", "use": "@vercel/static" }
+  ],
   "routes": [
-    {
-      "src": "/",
-      "dest": "/"
-    },
-    {
-      "src": "/test",
-      "dest": "/"
-    }
+    { "src": "/old-changePassword", "dest": "/changePassword.html" },
+    { "src": "/old-signin", "dest": "/signin.html" },
+    { "src": "/old-accountRecovery", "dest": "/accountRecovery.html" }
   ]
 }
